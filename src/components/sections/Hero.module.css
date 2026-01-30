@@ -1,0 +1,147 @@
+.section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.greeting {
+    font-family: var(--font-body);
+    color: var(--accent-main);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--foreground) 0%, var(--muted) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 4.5rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-foreground);
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 600px;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.socialLink {
+    color: var(--muted);
+    font-size: 1.75rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+    color: var(--accent-main);
+    transform: translateY(-2px);
+}
+
+.imageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Matching the requested "darker circle behind it" style */
+.avatarContainer {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--accent-main);
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+    background: var(--secondary);
+    /* Darker circle background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .avatarContainer {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Background Elements */
+.backgroundBlur {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--accent-main);
+    filter: blur(140px);
+    opacity: 0.15;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.backgroundBlur2 {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-highlight);
+    filter: blur(140px);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
+}

@@ -1,0 +1,114 @@
+.section {
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, var(--accent-main), var(--accent-highlight));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    background: var(--secondary);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.input,
+.textarea {
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--accent-main);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.button {
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.statusMessage {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.success {
+    background: rgba(52, 211, 153, 0.1);
+    color: var(--accent-success);
+    border: 1px solid var(--accent-success);
+}
+
+.error {
+    background: rgba(248, 113, 113, 0.1);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
