@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google"; // Using Inter and Outfit
+import { Analytics } from "@vercel/analytics/next";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import "./globals.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable}`}>
         <ThemeToggle />
         {children}
+        <Analytics />
       </body>
     </html>
   );
