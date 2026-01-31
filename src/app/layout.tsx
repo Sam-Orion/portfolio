@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Shubham Misra | SWE, AI & ML Engineer",
+  title: "Shubham Misra | AI Engineer",
   description: "Portfolio of Shubham Misra, a Software Engineer and AI/ML Specialist based in India.",
   icons: {
     icon: "/favicon.ico", // Ensure we have a favicon later
