@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google"; // Using Inter and Outfit
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import HamburgerMenu from "@/components/ui/HamburgerMenu";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en" data-theme="dark">
       <body className={`${inter.variable} ${outfit.variable}`}>
         <ThemeToggle />
+        <HamburgerMenu />
         {children}
       </body>
     </html>

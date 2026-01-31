@@ -1,0 +1,91 @@
+.menuButton {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 50;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menuButton:hover {
+    transform: scale(1.1);
+    border-color: var(--accent-main);
+    background: var(--background);
+    color: var(--accent-main);
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+/* Minimalist Dropdown Overlay - transparent container for click-outside */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    /* Below button (50) */
+    background: transparent;
+}
+
+.nav {
+    position: fixed;
+    top: 5rem;
+    /* 1.5rem top + 3rem height + 0.5rem gap */
+    left: 1.5rem;
+    z-index: 45;
+
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    transform-origin: top left;
+}
+
+[data-theme='light'] .nav {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.navLink {
+    font-family: var(--font-body);
+    /* Changed from heading for cleaner look */
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+    display: block;
+    width: 100%;
+}
+
+.navLink:hover {
+    color: var(--accent-main);
+}

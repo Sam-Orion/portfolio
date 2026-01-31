@@ -32,10 +32,10 @@ export default function Hero() {
                         Shubham Misra
                     </motion.h1>
                     <motion.h2 className={styles.subtitle} variants={fadeInUp}>
-                        SWE / ML / AI Engineer
+                        AI Engineer
                     </motion.h2>
                     <motion.p className={styles.description} variants={fadeInUp}>
-                        NIT Delhi (Electrical + AI/ML Minor) | Former AI Research Intern at Maker&apos;s Lab. I combine a foundation in Electrical Engineering with independently mastered CS fundamentals to create scalable, data-driven solutions.
+                        Former AI Research Intern at Maker&apos;s Lab. I combine a foundation in Electrical Engineering with independently mastered CS fundamentals to create scalable, data-driven solutions.
                     </motion.p>
 
                     <motion.div className={styles.socials} variants={fadeInUp}>
@@ -68,15 +68,13 @@ export default function Hero() {
                 >
                     <div className={styles.avatarContainer}>
                         <Image
-                            src="/real-avatar.png"
+                            src="/new-avatar.png"
                             alt="Shubham Misra"
                             width={400}
                             height={400}
                             priority
                             style={{
-                                objectFit: 'cover',
-                                // Using transform to manually position since object-fit has no effect on matching aspect ratios
-                                transform: 'scale(1.3) translateY(10%)'
+                                objectFit: 'contain',
                             }}
                         />
                     </div>
