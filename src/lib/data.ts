@@ -32,29 +32,20 @@ export const SKILLS_DATA = [
 
 export const PROJECTS_DATA = [
     {
-        id: "1",
-        title: "AI Code Assistant",
-        description: "An intelligent coding companion that suggests optimizations and generates documentation.",
-        tech: ["Python", "Transformers", "VS Code API"],
-        link: "https://github.com/shubham/ai-assistant",
-        image: "https://placehold.co/600x400/1e293b/818cf8?text=AI+Assistant",
-        slug: "ai-code-assistant"
+        id: "airsense",
+        title: "AirSense",
+        description: "I built a way to control your Mac with just hand gestures. AirSense turns your webcam into a motion sensor—pinch to pause Spotify, slide to adjust volume, swipe to skip tracks. I added smart power-saving that cuts CPU usage by 80% when you're not moving, plus precision controls so accidental gestures won't mess things up. It's touch-free computing that actually works.",
+        tech: ["Python", "Google MediaPipe", "OpenCV", "AppleScript", "PyObjC (AVFoundation)"],
+        link: "https://github.com/Sam-Orion/AirSense",
+        image: "/projects/airsense.svg",
+        slug: "airsense"
     },
     {
-        id: "2",
-        title: "Smart Traffic Management",
-        description: "Computer vision system for real-time traffic analysis and signal optimization.",
-        tech: ["YOLOv8", "OpenCV", "FastAPI"],
-        link: "https://github.com/shubham/smart-traffic",
-        image: "https://placehold.co/600x400/1e293b/818cf8?text=Smart+Traffic",
-        slug: "smart-traffic-management"
-    },
-    {
-        id: "3",
+        id: "portfolio",
         title: "Portfolio Website",
         description: "A premium developer portfolio built with Next.js and custom design system.",
         tech: ["Next.js", "TypeScript", "Framer Motion"],
-        link: "https://github.com/shubham/portfolio",
+        link: "https://github.com/Sam-Orion/Portfolio",
         image: "https://placehold.co/600x400/1e293b/818cf8?text=Portfolio",
         slug: "portfolio-website"
     }
