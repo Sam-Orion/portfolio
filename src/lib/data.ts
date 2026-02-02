@@ -41,6 +41,15 @@ export const PROJECTS_DATA = [
         slug: "airsense"
     },
     {
+        id: "wanda-python",
+        title: "Wanda-Python",
+        description: "I built a tool to shrink massive language models without breaking them. Wanda-Python implements a clever pruning technique that removes up to 50% of a model's weights by looking at both their size and how actively they're being used—not just their magnitude. I've packaged this as a simple command-line tool that works with LLaMA and OPT models, turning bloated billions-of-parameter models into lean machines that run faster without tanking performance.",
+        tech: ["PyTorch", "Hugging Face Transformers", "CUDA", "LoRA", "SparseGPT"],
+        link: "https://github.com/Sam-Orion/wanda-python",
+        image: "/projects/wanda.svg",
+        slug: "wanda-python"
+    },
+    {
         id: "portfolio",
         title: "Portfolio Website",
         description: "A premium developer portfolio built with Next.js and custom design system.",
