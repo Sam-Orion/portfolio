@@ -50,6 +50,15 @@ export const PROJECTS_DATA = [
         slug: "wanda-python"
     },
     {
+        id: "ytmusic-spotify",
+        title: "YTMusic-to-Spotify",
+        description: "I solved the playlist migration headache between YouTube Music and Spotify. This Streamlit web app connects to both platforms via OAuth, lets you pick any YouTube Music playlist, and automatically matches and transfers every song to a fresh Spotify playlist. It handles the messy parts—fuzzy matching titles and artists, tracking what transferred and what didn't, and giving you a downloadable list of songs that couldn't be found so you can add them manually.",
+        tech: ["Streamlit", "Spotipy", "Google API Client", "OAuth 2.0", "GCP"],
+        link: "https://github.com/Sam-Orion/ytmusic-to-spotify",
+        image: "/projects/ytmusic-spotify.svg",
+        slug: "ytmusic-to-spotify"
+    },
+    {
         id: "portfolio",
         title: "Portfolio Website",
         description: "A premium developer portfolio built with Next.js and custom design system.",
