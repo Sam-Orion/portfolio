@@ -55,7 +55,7 @@ export default function ProjectsPreview() {
                                 <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
                                     <FaGithub /> Code
                                 </a>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                <a href={(project as any).demo || project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
                                     <FaExternalLinkAlt /> Demo
                                 </a>
                             </div>
